@@ -3,7 +3,7 @@ let db = mysql.createConnection({
     host     : 'https://academyjob.org',
     port:'3306',
     user     : 'onclickj_naor',
-    password : 'parnasa2020',
+    password : 'parnasa2020S',
     database:"onclickj_naor"
 });
 
