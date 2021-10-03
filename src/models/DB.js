@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 let db = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : '',
-    database:"naor"
+    host     : 'https://academyjob.org',
+    user     : 'onclickj_naor',
+    password : 'parnasa2020',
+    database:"onclickj_naor"
 });
 
 db.connect((err) => {
