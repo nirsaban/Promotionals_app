@@ -11,7 +11,10 @@ db.connect((err) => {
     if (err) {
         console.log(err)
         throw err
+    }else{
+        console.log('here DV')
     };
 });
+console.log('here DBBB')
 
 module.exports = db;
