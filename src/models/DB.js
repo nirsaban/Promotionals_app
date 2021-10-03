@@ -1,17 +1,16 @@
-const mysql = require('mysql');
-let db = mysql.createConnection({
-    host     : 'academyjob.org',
-    port:'3306',
-    user     : 'onclickj_main',
-    password : 'parnasa2020S',
-    database:"onclickj_naor"
-});
+// const mysql = require('mysql');
+// let db = mysql.createConnection({
+//     host     : 'localhost',
+//     user     : 'root',
+//     password : '',
+//     database:"naor"
+// });
 
-db.connect((err) => {
-    if (err) {
-        console.log(err)
-        throw err
-    };
-});
+// db.connect((err) => {
+//     if (err) {
+//         console.log(err)
+//         throw err
+//     };
+// });
 
-module.exports = db;
+// module.exports = db;
