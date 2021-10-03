@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 let db = mysql.createConnection({
-    host     : 'https://academyjob.org',
+    host     : 'localhost',
     port:'3306',
     user     : 'onclickj_naor',
     password : 'parnasa2020S',
