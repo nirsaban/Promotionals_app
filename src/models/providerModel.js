@@ -13,13 +13,15 @@ Provider.addProvider = ({state:{provider_name,more_info}}, result) => {
        }
    });           
 }
-Provider.getProviders = (getProviders, result) => {    
-    console.log(getProviders) 
+Provider.getProviders = (result) => {    
+   
     sql.query("SELECT name FROM providers",  (err, res) => {  
        if(err) {
            result(err, null);
+           console.log(err) 
        }
        else{
+          
            result(null, res);
        }
    });           
