@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 let db = mysql.createConnection({
-    host     : 'myservicessapps.com',
-    user     : 'myservicessapps_myservic_reg_apk_new_mb',
-    password : 'TBNznM2aD;,vb((SIp',
-    database:"myservic_registra_apk",
-    connectionLimit : 10
+    host     : 'naor.cuu1hxd5gncc.eu-west-1.rds.amazonaws.com',
+    user     : 'naor',
+    password : '12345678',
+    database:"naor",
+    port:3306
 });
 
 db.connect((err) => {
