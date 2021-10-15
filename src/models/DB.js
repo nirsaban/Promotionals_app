@@ -3,7 +3,8 @@ let db = mysql.createConnection({
     host     : 'naor.cuu1hxd5gncc.eu-west-1.rds.amazonaws.com',
     user     : 'naor',
     password : '12345678',
-    database:"naor"
+    database:"naor",
+    port:3306
 });
 
 db.connect((err) => {
