@@ -1,4 +1,4 @@
-var sql = require('./db.js');
+var sql = require('./DB.js');
 
 const  Promotional = {};
 
