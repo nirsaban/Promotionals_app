@@ -7,11 +7,11 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 app.use(express.static(path.join(__dirname, 'build')));
+routes(app);
 app.get('/*', (req, res) => {
-    console.log("WTF")
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-routes(app);  
+routes(app);
 app.listen(process.env.PORT || 5000, function(){
    
 });
