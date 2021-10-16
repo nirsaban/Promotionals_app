@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 let db = mysql.createConnection({
-    host     : 'naor.cuu1hxd5gncc.eu-west-1.rds.amazonaws.com',
-    user     : 'naor',
+    host     : 'naordb.cuu1hxd5gncc.eu-west-1.rds.amazonaws.com',
+    user     : 'naordb',
     password : '12345678',
-    database:"naor",
+    database:"naordb",
     port:3306
 });
 
