@@ -14,7 +14,7 @@ Promotional.addPromotional(req.body, async (err, promotionalCreated) => {
 exports.get_last_month= (req, res) => {
 Promotional.getLastMonth(async (err, data) => {
  if (err) res.send({msg:"somthing faild"});
-    if(data.length > 0){
+    if(Object.keys(data).length > 0){
          res.send({
             data:data
         })
