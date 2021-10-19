@@ -44,3 +44,25 @@ Promotional.getLastMonth(async (err, data) => {
     }
 });
 };
+exports.update_product_status = (req, res) => {
+
+
+Promotional.updateProductStatus(req.body ,async (err, data) => {
+ if (err) res.send({msg:"somthing faild"});
+    if(data.affectedRows > 0){
+         res.send({
+            msg:"success"
+        })
+    }
+});
+};
+exports.delete_product = (req, res) => {
+Promotional.deleteProduct(req.body ,async (err, data) => {
+ if (err) res.send({msg:"somthing faild"});
+    if(data.affectedRows > 0){
+         res.send({
+            msg:"success"
+        })
+    }
+});
+};
