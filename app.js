@@ -4,8 +4,10 @@ const routes = require('./src/routes/apiRoutes'); //importing route
 const path = require('path');
 const app = express();
 
+app.use('/public', express.static('public'));
 app.use(express.json());
 app.use(cors())
+
 app.use(express.static(path.join(__dirname, 'build')));
 routes(app);
 app.get('/*', (req, res) => {

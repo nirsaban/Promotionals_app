@@ -3,8 +3,10 @@ var sql = require('./DB.js');
 const  Promotional = {};
 
 
-Promotional.addPromotional = ({state:{product_name,more_info,product_price,provider_name}}, result) => {  
-    sql.query("INSERT INTO `promotionals` VALUES(NULL,?,?,?,?,NOW())", [product_name,provider_name,more_info,product_price],  (err, res) => {  
+
+Promotional.addPromotional = (data, result) => { 
+    const {product_name,more_info,product_price,provider_name,fileName} = data
+    sql.query("INSERT INTO `promotionals` VALUES(NULL,?,?,?,?,?,NOW())", [product_name,provider_name,more_info,product_price,fileName],  (err, res) => {  
        if(err) {
            result(err, null);
        }

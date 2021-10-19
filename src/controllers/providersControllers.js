@@ -12,7 +12,6 @@ Provider.addProvider(req.body, async (err, providerCreated) => {
 });
 };
 exports.get_providers = (req, res) => {
-console.log('preer')
 Provider.getProviders( (err, providers) => {
  if (err) res.send({msg:"somthing faild"});
     if(providers){
